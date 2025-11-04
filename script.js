@@ -18,7 +18,7 @@
         }
         else{
             alert(`Logged in as ${userName.value}`)
-            let localData = JSON.parse(localStorage.getItem("detail"))
+            let localData = JSON.parse(localStorage.getItem("detail"))||[];
             for(let t of localData){
                 if(t.name ==userName.value && t.password == password.value){
                     localStorage.removeItem("detail")
