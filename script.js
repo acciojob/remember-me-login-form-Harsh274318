@@ -27,7 +27,7 @@
 
         }
     })
-    let dataOflocal = JSON.parse(localStorage.getItem("detail"))
+let dataOflocal = JSON.parse(localStorage.getItem("detail")) || [];
                 if(dataOflocal.length != 0){
                     existing.style.display = (existing.style.display="none")?"inline-block":"none";
                 }
